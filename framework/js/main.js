@@ -52,3 +52,20 @@ var model = {
 		]
 	}
 };
+
+var controller = {
+	initialize: function(){
+		portfolio_view.initialize();
+	},
+	getProjects: function(){
+		return model.my_info.projects;
+	}
+}
+
+var portfolio_view = {
+	initialize: function(){
+		console.log(controller.getProjects());
+	}
+}
+
+controller.initialize();
