@@ -38,7 +38,7 @@ var model = {
 				screenshot: "http://placekitten.com/g/600/300",
 				description: "Content management system that is engineered with Flask framework in\
 				 Python and advanced user authentication using OAuth2 with all its data stored in a\
-				 PostgreSQ database",
+				 PostgreSQL database",
 				github_repo_link: "https://github.com/gggonzalez03/Restaurant-Item-Catalog",
 				technologies_used: [
 					"SQL",
@@ -65,8 +65,8 @@ var model = {
 				name: "Neighborhood Map",
 				screenshot: "http://placekitten.com/g/600/300",
 				description: "A single-page web application that lets users discover new places\
-				 and learn more about them using an interactive map and UI built using Knockout JS,\ 
-				 Google Maps API, and Foursquare API",
+				 and learn more about them using an interactive map and UI built using Knockout JS,\
+				 Google Maps API, and Foursquare API.",
 				github_repo_link: "https://github.com/gggonzalez03/Neighborhood-Map",
 				technologies_used: [
 					"Javascript",
