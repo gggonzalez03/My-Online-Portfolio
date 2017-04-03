@@ -9,4 +9,8 @@ angular.module('portfolio', [])
     portfolio.getProjects = function(){
       return model.my_info.projects;
     };
+    
+    portfolio.getTitles = function(){
+    	return model.my_info.titles;
+    }
   });
