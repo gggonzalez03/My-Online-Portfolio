@@ -1,20 +1,50 @@
-body{
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 0px) {
+	body{
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+	}
+
+	.text-muted{
+		color: #BCBBBB;
+	}
+
+	.text-thin{
+		font-weight: 100;
+	}
+
+	.title-super{
+		font-size: 60px;
+	}
+
+	.title-logo{
+		margin-top:20px;
+	}
+	
+	#horizontalRule{
+		height: 3px;
+		background-color: #7d97ad;
+	}
 }
-.text-muted{
-	color: #BCBBBB;
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
 }
-.text-thin{
-	font-weight: 100;
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
 }
-.title-super{
-	font-size: 60px;
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
 }
-.title-logo{
-	margin-top:20px;
-}
-#horizontalRule{
-	height: 3px;
-	background-color: #7d97ad;
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }
