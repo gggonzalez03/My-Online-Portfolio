@@ -3,11 +3,19 @@ angular.module('portfolio', [])
     var portfolio = this;
 
     portfolio.getName = function(){
-      return model.my_info.name;
+    	return model.my_info.name;
+    };
+
+    portfolio.getAbout = function(){
+    	return model.my_info.about;
     };
 
     portfolio.getProjects = function(){
-      return model.my_info.projects;
+    	return model.my_info.projects;
+    };
+
+    portfolio.getLinks = function(){
+    	return model.my_info.links;
     };
     
     portfolio.getTitles = function(){
