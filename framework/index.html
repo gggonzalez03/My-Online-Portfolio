@@ -18,7 +18,11 @@
                     <h1>{{pc.getName()}}</h1>
                     <p>{{pc.getTitles()[0]}}</p>
                     <p>{{pc.getAbout()}}</p>
-                    <p>{{pc.getLinks()}}</p>
+                    <div id="socials">
+                        <span ng-repeat="link in pc.getLinks()">
+                            <a href="{{link.link}}"><img class="social-logos" src="{{link.logo}}"></a>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div id="contactspage" class="row sections">
+        <div id="contactpage" class="row sections">
             <div id="salutation" class="col-md-6">
                 <div id="content">
                     <h1>Contact</h1>

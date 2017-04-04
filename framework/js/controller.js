@@ -15,7 +15,15 @@ angular.module('portfolio', [])
     };
 
     portfolio.getLinks = function(){
-    	return model.my_info.links;
+    	var validLinks = [];
+
+    	model.my_info.links.forEach(function(link){
+    		if(link.link && link.logo)
+    		{
+    			validLinks.push(link);
+    		}
+    	});
+    	return validLinks;
     };
     
     portfolio.getTitles = function(){

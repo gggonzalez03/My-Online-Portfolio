@@ -9,13 +9,33 @@ var model = {
 		bio: "The only thing different...",
 		about: "",
 		profile_pic: null,
-		links: {
-			github: "https://github.com/gggonzalez03",
-			linkedin: "https://www.linkedin.com/in/ging-gonzalez",
-			resume: null,
-			twitter: null,
-			facebook: null
-		},
+		links: [
+			{
+				name: "github",
+				link: "https://github.com/gggonzalez03",
+				logo: "img/github.svg"
+			},
+			{
+				name: "linkedin",
+				link: "https://www.linkedin.com/in/ging-gonzalez",
+				logo: "img/linkedin.svg"
+			},
+			{
+				name: "resume",
+				link: null,
+				logo: null
+			},
+			{
+				name: "twitter",
+				link: null,
+				logo: null
+			},
+			{
+				name: "facebook",
+				link: null,
+				logo: null
+			}
+		],
 		skills: [
 			"Python", "Java", "C++", "HTML", "CSS", 
 		],
