@@ -35,10 +35,12 @@
 
 	/*homepage*/
 	#homepage{
-		background: linear-gradient(rgba(15, 159, 255, 0.5), rgba(15, 159, 255, 0.5)),
-		url('http://placekitten.com/g/1080/920');
+		background-image: linear-gradient(rgba(15, 159, 255, 0.5), rgba(15, 159, 255,
+			0.5)),
+		url('../img/G.svg');
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 
 	#homepage > #about{
@@ -56,15 +58,20 @@
 
 	/*projects page*/
 	#projectspage{
-		background: linear-gradient(rgba(15, 159, 255, 0.5), rgba(15, 159, 255, 0.5)),
-		url('http://placekitten.com/g/1080/920');
+		background: linear-gradient(rgba(15, 159, 255, 0.1), rgba(15, 159, 255, 0.1)),
+		url('');
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 
 	.project-cards{
 		position: relative;
 		padding: 0px;
+	}
+
+	.project-cards > img{
+		width: 100%;
 	}
 
 	.project-cards > .info >p{
@@ -89,6 +96,11 @@
 		width: 100%;
 		z-index: 1;
 	}
+
+	/*contactpage*/
+	#contactpage > #salutation > #content{
+		display: none;
+	}
 }
 
 /* Extra Small Devices, Phones */ 
@@ -105,12 +117,6 @@
 @media only screen and (min-width : 992px) {
 
 	/*homepage*/
-	#homepage{
-		background: linear-gradient(rgba(15, 159, 255, 0.5), rgba(15, 159, 255, 0.5)),
-		url('http://placekitten.com/g/1080/920');
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
 
 	#homepage > #about{
 		background-color: rgba(255, 255, 255 ,0.1);
@@ -126,31 +132,42 @@
 	}
 
 	/*projects page*/
-	#projectspage{
-		background: linear-gradient(rgba(15, 159, 255, 0.5), rgba(15, 159, 255, 0.5)),
-		url('http://placekitten.com/g/1080/920');
-		background-repeat: no-repeat;
-		background-size: cover;
+
+	.project-cards{
+		position: relative;
+		padding: 0px;
 	}
 
-	.card{
-		border-radius: 25px;
-		height: 50vh;
-		background-color: #E1E0E4;
-		margin: 20px;
-		margin-bottom: 50px;
+	.project-cards > img{
+		width: 100%;
 	}
 
-	.card > .card-photo{
-		border-top-right-radius: 25px;
-		border-top-left-radius: 25px;
+	.project-cards > .info >p{
+		display: block;
 	}
 
-	.card > .info{
-		margin-left: 20px;
-		margin-top: 10px;
-		margin-right: 20px;
-		margin-bottom: 10px;
+	.project-cards > .info {
+		position: absolute;
+		top: 20px;
+		left: 0px;
+		right: 0px;
+		margin: auto;
+		color: white;
+		text-align: center;
+		z-index: 2;
+	}
+
+	.project-cards > .darken-filter{
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+	}
+
+	/*contactpage*/
+	#contactpage > #salutation > #content{
+		display: none;
 	}
 	/*homepage*/
 	#homepage > #about{

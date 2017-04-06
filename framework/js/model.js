@@ -7,7 +7,11 @@ var model = {
 			"Back-end Web Developer"
 		],
 		bio: "The only thing different...",
-		about: "",
+		about: "I'm a web developer based in San Jose, CA who utilizes advanced front-end and back-end technologies to craft\
+		 fast, secure, and responsive web applications. Beyond my studies as a Computer Science student, I love to explore more\
+		 outside my classes. In fact, I enrolled and graduated from Udacity's Full-Stack Web Development Nanodegree with the set\
+		 of skills I need to deliver a fully functional and reliable data-driven websites.\
+		 I enjoy working with APIs and databases",
 		profile_pic: null,
 		links: [
 			{
