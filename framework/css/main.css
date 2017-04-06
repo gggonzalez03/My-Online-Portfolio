@@ -47,6 +47,14 @@
 		background-color: rgba(255, 255, 255 ,0.1);
 		color: white;
 		padding: 5vh;
+		height: 100vh;
+	}
+
+	#homepage > #about > #content{
+		position: absolute;
+		right: 2%;
+		left: 2%;
+		bottom: 5%;
 	}
 
 	.social-logos{
@@ -110,35 +118,19 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-	/*homepage*/
-
-	#homepage > #about{
-		background-color: rgba(255, 255, 255 ,0.1);
-		color: white;
-		padding: 5vh;
-	}
-
-	.social-logos{
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-		margin-right: 10px;
-	}
-
 	/*projects page*/
 
 	.project-cards{
-		position: relative;
+		border-radius: 25px;
+		margin: 20px;
 		padding: 0px;
+		background-color: #EFEAEA;
+		box-shadow: 8px 8px 8px #C3C0C0;
 	}
 
 	.project-cards > img{
+		border-top-right-radius: 25px;
+		border-top-left-radius: 25px;
 		width: 100%;
 	}
 
@@ -147,23 +139,20 @@
 	}
 
 	.project-cards > .info {
-		position: absolute;
-		top: 20px;
-		left: 0px;
-		right: 0px;
+		position: relative;
 		margin: auto;
-		color: white;
+		color: black;
 		text-align: center;
-		z-index: 2;
+		top: 0;
 	}
 
 	.project-cards > .darken-filter{
-		position: absolute;
-		top: 0;
-		height: 100%;
-		width: 100%;
-		z-index: 1;
+		display: none;
 	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
 
 	/*contactpage*/
 	#contactpage > #salutation > #content{
@@ -172,6 +161,14 @@
 	/*homepage*/
 	#homepage > #about{
 		height: 100vh;
+	}
+
+	/*projects page*/
+	.project-cards{
+		border-radius: 25px;
+		margin: 20px;
+		padding: 0px;
+		height: 40vh;
 	}
 
 	/*contactpage*/
