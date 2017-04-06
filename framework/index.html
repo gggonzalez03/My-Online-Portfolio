@@ -30,15 +30,24 @@
             <h1>Works</h1>
             <div class="row">
                 <div class="col-md-4 zero-sides" ng-repeat="proj in pc.getProjects()">
-                    <div class="project-cards">
-                        <img src="{{proj.screenshot}}" class="card-photo img-responsive"/>
-                        <div class="darken-filter"></div>
-                        <div class="info">
-                            <h3>{{proj.name}}</h3>
-                            <p>{{proj.description}}</p>
-                            <span ng-repeat="techs in proj.technologies_used">
-                                <span>{{techs}} </span>
-                            </span>
+                    <button class="proj-exp-button" type="button" data-toggle="modal" data-target="#card-expand-{{$index}}">
+                        <div class="project-cards">
+                            <img src="{{proj.screenshot}}" class="card-photo img-responsive"/>
+                            <div class="darken-filter"></div>
+                            <div class="info">
+                                <h3>{{proj.name}}</h3>
+                                <p>{{proj.description}}</p>
+                                <span ng-repeat="techs in proj.technologies_used">
+                                    <span>{{techs}}. </span>
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                    <div id="card-expand-{{$index}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                {{$index}}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -35,8 +35,7 @@
 
 	/*homepage*/
 	#homepage{
-		background-image: linear-gradient(rgba(15, 159, 255, 0.5), rgba(15, 159, 255,
-			0.5)),
+		background: linear-gradient(rgba(15, 159, 255, 0.5), rgba(15, 159, 255, 0.5)),
 		url('../img/G.svg');
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -106,6 +105,11 @@
 	}
 
 	/*contactpage*/
+	#contactpage{
+		background: #4549FF;
+		color: white;
+	}
+
 	#contactpage > #salutation > #content{
 		display: none;
 	}
@@ -122,10 +126,14 @@
 
 	.project-cards{
 		border-radius: 25px;
-		margin: 20px;
 		padding: 0px;
 		background-color: #EFEAEA;
-		box-shadow: 8px 8px 8px #C3C0C0;
+		box-shadow: 7px 7px 4px #D1D1D1;
+		transition: box-shadow 0.2s ease;
+	}
+
+	.project-cards:hover{
+		box-shadow: 2px 2px 2px #C3C0C0;
 	}
 
 	.project-cards > img{
@@ -166,10 +174,21 @@
 	/*projects page*/
 	.project-cards{
 		border-radius: 25px;
-		margin: 20px;
 		padding: 0px;
 		height: 40vh;
 	}
+
+	.proj-exp-button{
+		margin: 20px;
+		padding: 0;
+		border: 0;
+		border-radius: 25px;
+	}
+
+	.proj-exp-button:focus{
+		outline: 0;
+	}
+
 
 	/*contactpage*/
 	#contactpage > #salutation > #content{
