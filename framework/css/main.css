@@ -18,11 +18,91 @@
 		margin-left: 0px;
 	}
 
+	.zero-sides{
+		margin: 0px;
+		padding: 0px;
+	}
+
 	.sections{
 		margin: 0;
 		height: 100%;
 		width: 100%;
 	}
+
+	.darken-filter{
+		background: rgba(0, 0, 0, 0.4);
+	}
+
+	/*homepage*/
+	#homepage{
+		background: linear-gradient(rgba(15, 159, 255, 0.5), rgba(15, 159, 255, 0.5)),
+		url('http://placekitten.com/g/1080/920');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	#homepage > #about{
+		background-color: rgba(255, 255, 255 ,0.1);
+		color: white;
+		padding: 5vh;
+	}
+
+	.social-logos{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		margin-right: 10px;
+	}
+
+	/*projects page*/
+	#projectspage{
+		background: linear-gradient(rgba(15, 159, 255, 0.5), rgba(15, 159, 255, 0.5)),
+		url('http://placekitten.com/g/1080/920');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.project-cards{
+		position: relative;
+		padding: 0px;
+	}
+
+	.project-cards > .info >p{
+		display: none;
+	}
+
+	.project-cards > .info {
+		position: absolute;
+		top: 20px;
+		left: 0px;
+		right: 0px;
+		margin: auto;
+		color: white;
+		text-align: center;
+		z-index: 2;
+	}
+
+	.project-cards > .darken-filter{
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
 
 	/*homepage*/
 	#homepage{
@@ -72,20 +152,6 @@
 		margin-right: 20px;
 		margin-bottom: 10px;
 	}
-}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
 	/*homepage*/
 	#homepage > #about{
 		height: 100vh;
