@@ -46,7 +46,10 @@ var model = {
 		projects: [
 			{
 				name: "Multi-user Blog Website",
-				screenshot: "http://placehold.it/350x150",
+				screenshot: [
+						"http://placehold.it/350x150",
+						"http://placehold.it/350x151"
+					],
 				description: "Multi-user web application hosted on Google App Engine that enables\
 				 users to post, delete, comment, and like blog posts. Built with secure login functionality\
 				 using password hashes and salt preventing brute force attacks.",
@@ -59,7 +62,10 @@ var model = {
 			},
 			{
 				name: "Restaurant Item Catalog",
-				screenshot: "http://placehold.it/350x150",
+				screenshot: [
+						"http://placehold.it/350x150",
+						"http://placehold.it/350x151"
+					],
 				description: "Content management system that is engineered with Flask framework in\
 				 Python and advanced user authentication using OAuth2 with all its data stored in a\
 				 PostgreSQL database",
@@ -75,7 +81,10 @@ var model = {
 			},
 			{
 				name: "Swiss Tournament Facilitator",
-				screenshot: "http://placehold.it/350x150",
+				screenshot: [
+						"http://placehold.it/350x150",
+						"http://placehold.it/350x151"
+					],
 				description: "Python application that ficilitates game tournaments the swiss way.\
 				 Built with a relational database using PostgreSQL.",
 				github_repo_link: "https://github.com/gggonzalez03/fullstack-nanodegree-vm",
@@ -87,7 +96,10 @@ var model = {
 			},
 			{
 				name: "Neighborhood Map",
-				screenshot: "http://placehold.it/350x150",
+				screenshot: [
+						"http://placehold.it/350x150",
+						"http://placehold.it/350x151"
+					],
 				description: "A single-page web application that lets users discover new places\
 				 and learn more about them using an interactive map and UI built using Knockout JS,\
 				 Google Maps API, and Foursquare API.",

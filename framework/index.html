@@ -29,24 +29,65 @@
         <div id="projectspage" class="row sections">
             <h1>Works</h1>
             <div class="row">
-                <div class="col-md-4 zero-sides" ng-repeat="proj in pc.getProjects()">
-                    <button class="proj-exp-button" type="button" data-toggle="modal" data-target="#card-expand-{{$index}}">
-                        <div class="project-cards">
-                            <img src="{{proj.screenshot}}" class="card-photo img-responsive"/>
-                            <div class="darken-filter"></div>
-                            <div class="info">
-                                <h3>{{proj.name}}</h3>
-                                <p>{{proj.description}}</p>
-                                <span ng-repeat="techs in proj.technologies_used">
-                                    <span>{{techs}}. </span>
-                                </span>
-                            </div>
+                <div class="col-md-4 zero-sides" ng-repeat="(projindex, proj) in pc.getProjects()">
+                    <div class="project-cards" data-toggle="modal" data-target="#card-expand-{{$index}}">
+                        <img src="{{proj.screenshot[0]}}" class="card-photo img-responsive"/>
+                        <div class="darken-filter"></div>
+                        <div class="info">
+                            <h3>{{proj.name}}</h3>
+                            <p>{{proj.description}}</p>
+                            <span ng-repeat="techs in proj.technologies_used">
+                                <span>{{techs}}. </span>
+                            </span>
                         </div>
-                    </button>
-                    <div id="card-expand-{{$index}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    </div>
+                    <div id="card-expand-{{projindex}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                         <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
-                                {{$index}}
+                                <!--modal header-->
+                                <div class="proj-modal-header">
+                                    <h2 class="proj-name">{{proj.name}}</h2>
+                                </div>
+                                <!--modal header end-->
+
+                                <!--modal carousel-->
+                                <div id="proj-photo-slides{{projindex}}" class="carousel slide" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#proj-photo-slides0" data-slide-to="0" class="active"></li>
+                                        <span ng-repeat="(ssindex, ss) in proj.screenshot"><li data-target="#proj-photo-slides{{projindex}}" data-slide-to="{{ssindex + 1}}"></li></span>
+                                    </ol>
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src="http://placehold.it/350x150">
+                                        </div>
+
+                                        <div class="item" ng-repeat="(ssindex, ss) in proj.screenshot">
+                                            <img src="{{ss}}" alt="Chania">
+                                        </div>
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#proj-photo-slides{{projindex}}" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#proj-photo-slides{{projindex}}" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!--modal carousel end-->
+
+                                <!--project description-->
+                                <div>
+                                    <p>{{proj.description}}</p>
+                                </div>
+                                <!--project description end-->
+
+
                             </div>
                         </div>
                     </div>
