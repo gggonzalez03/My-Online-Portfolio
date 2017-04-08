@@ -105,6 +105,11 @@
 	}
 
 	/*Project Modal Popup*/
+
+	.modal-content > .info {
+		margin: 10%;
+	}
+
 	.proj-modal-header {
 		padding: 2%;
 	}

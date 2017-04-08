@@ -54,18 +54,18 @@
                                 <div id="proj-photo-slides{{projindex}}" class="carousel slide" data-ride="carousel">
                                     <!-- Indicators -->
                                     <ol class="carousel-indicators">
-                                        <li data-target="#proj-photo-slides0" data-slide-to="0" class="active"></li>
-                                        <span ng-repeat="(ssindex, ss) in proj.screenshot"><li data-target="#proj-photo-slides{{projindex}}" data-slide-to="{{ssindex + 1}}"></li></span>
+                                        <li data-target="#proj-photo-slides{{projindex}}" data-slide-to="0" class="active">></li> 
+                                        <li ng-repeat="(ssindex, ss) in proj.screenshot" ng-if="ssindex != 0" data-target="#proj-photo-slides{{projindex}}" data-slide-to="{{ssindex}}"></li>    
                                     </ol>
 
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="item active">
-                                            <img src="http://placehold.it/350x150">
+                                            <img src="{{proj.screenshot[0]}}">
                                         </div>
 
-                                        <div class="item" ng-repeat="(ssindex, ss) in proj.screenshot">
-                                            <img src="{{ss}}" alt="Chania">
+                                        <div class="item" ng-repeat="(ssindex, ss) in proj.screenshot" ng-if="ssindex != 0">
+                                            <img src="{{ss}}">
                                         </div>
                                     </div>
 
@@ -82,7 +82,7 @@
                                 <!--modal carousel end-->
 
                                 <!--project description-->
-                                <div>
+                                <div class="info">
                                     <p>{{proj.description}}</p>
                                 </div>
                                 <!--project description end-->
