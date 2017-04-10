@@ -211,15 +211,14 @@
 
 
 	/*contactpage*/
-	#contactpage > #salutation > #content{
-		padding:100px;
-	}
 	#contactpage > #contact-form{
 		height: 100vh;
 	}
 
 	#contactpage > #contact-form > #content{
-		padding:100px;
+		padding-top: 10%;
+		padding-left: 25vw;
+		padding-right: 25vw;
 	}
 }
 
