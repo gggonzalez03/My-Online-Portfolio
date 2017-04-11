@@ -33,6 +33,10 @@
 		background: rgba(0, 0, 0, 0.4);
 	}
 
+	.inline {
+		display: inline;
+	}
+
 	/*homepage*/
 	#homepage{
 		background: linear-gradient(rgba(15, 159, 255, 0.5), rgba(15, 159, 255, 0.5)),

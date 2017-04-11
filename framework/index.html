@@ -19,9 +19,7 @@
                     <p>{{pc.getTitles()[0]}}</p>
                     <p>{{pc.getAbout()}}</p>
                     <div id="socials">
-                        <span ng-repeat="link in pc.getLinks()">
-                            <a href="{{link.link}}"><img class="social-logos" src="{{link.logo}}"></a>
-                        </span>
+                        <a ng-repeat="link in pc.getLinks()" href="{{link.link}}"><img class="social-logos" src="{{link.logo}}"></a>
                     </div>
                 </div>
             </div>
@@ -34,11 +32,15 @@
                         <img src="{{proj.screenshot[0]}}" class="card-photo img-responsive"/>
                         <div class="darken-filter"></div>
                         <div class="info">
-                            <h3>{{proj.name}}</h3>
-                            <p>{{proj.description}}</p>
-                            <span ng-repeat="techs in proj.technologies_used">
-                                <span>{{techs}}. </span>
-                            </span>
+                            <div class="row">
+                                <h3>{{proj.name}}</h3>
+                            </div>
+                            <div class="row">
+                                <p>{{proj.description}}</p>
+                            </div>
+                            <div class="row">
+                                <p class="inline" ng-repeat="tech in proj.technologies_used">{{tech}} </p>
+                            </div>
                         </div>
                     </div>
                     <div id="card-expand-{{projindex}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
@@ -83,7 +85,18 @@
 
                                 <!--project description-->
                                 <div class="info">
-                                    <p>{{proj.description}}</p>
+                                    <div class="row">
+                                        <p>{{proj.description}}</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="inline" ng-repeat="tech in proj.technologies_used">{{tech}} </p>
+                                    </div>
+                                    <!--info buttons-->
+                                    <div class="row">
+                                        <button class="btn col-sm-5">Demo</button>
+                                        <button class="btn col-sm-5">Github</button>
+                                    </div>
+                                    <!--info buttons end-->
                                 </div>
                                 <!--project description end-->
                             </div>
