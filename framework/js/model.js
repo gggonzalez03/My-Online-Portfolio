@@ -54,6 +54,7 @@ var model = {
 				 users to post, delete, comment, and like blog posts. Built with secure login functionality\
 				 using password hashes and salt preventing brute force attacks.",
 				github_repo_link: "https://github.com/gggonzalez03/Multi-user-Blog-Website",
+				demo_link: "https://udacitymultiuserblog.appspot.com/home",
 				technologies_used: [
 					"Python",
 					"Google App Engine",
@@ -70,6 +71,7 @@ var model = {
 				 Python and advanced user authentication using OAuth2 with all its data stored in a\
 				 PostgreSQL database",
 				github_repo_link: "https://github.com/gggonzalez03/Restaurant-Item-Catalog",
+				demo_link: "http://34.203.97.167",
 				technologies_used: [
 					"SQL",
 					"Flask",
@@ -88,6 +90,7 @@ var model = {
 				description: "Python application that ficilitates game tournaments the swiss way.\
 				 Built with a relational database using PostgreSQL.",
 				github_repo_link: "https://github.com/gggonzalez03/fullstack-nanodegree-vm",
+				demo_link: "",
 				technologies_used: [
 					"RDBMS",
 					"SQL",
@@ -104,6 +107,7 @@ var model = {
 				 and learn more about them using an interactive map and UI built using Knockout JS,\
 				 Google Maps API, and Foursquare API.",
 				github_repo_link: "https://github.com/gggonzalez03/Neighborhood-Map",
+				demo_link: "",
 				technologies_used: [
 					"Javascript",
 					"AJAX",
