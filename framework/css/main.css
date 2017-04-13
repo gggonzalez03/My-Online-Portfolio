@@ -37,6 +37,11 @@
 		display: inline;
 	}
 
+	.link-btn {
+		background-color: #E1E1E1;
+		color: black;
+	}
+
 	/*homepage*/
 	#homepage{
 		background: linear-gradient(rgba(15, 159, 255, 0.5), rgba(15, 159, 255, 0.5)),
@@ -85,7 +90,7 @@
 		width: 100%;
 	}
 
-	.project-cards > .info >p{
+	.project-cards > .info > .row > .desc{
 		display: none;
 	}
 
@@ -172,11 +177,12 @@
 		width: 100%;
 	}
 
-	.project-cards > .info >p{
+	.project-cards > .info > .row > .desc{
 		display: block;
 	}
 
 	.project-cards > .info {
+		padding: 2%;
 		position: relative;
 		margin: auto;
 		color: black;

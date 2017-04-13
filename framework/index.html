@@ -36,7 +36,7 @@
                                 <h3>{{proj.name}}</h3>
                             </div>
                             <div class="row">
-                                <p>{{proj.description}}</p>
+                                <p class="desc">{{proj.description}}</p>
                             </div>
                             <div class="row">
                                 <p class="inline" ng-repeat="tech in proj.technologies_used">{{tech}} </p>
@@ -93,8 +93,8 @@
                                     </div>
                                     <!--info buttons-->
                                     <div class="row">
-                                        <button class="btn col-sm-5">Demo</button>
-                                        <button class="btn col-sm-5">Github</button>
+                                        <a class="btn col-xs-6 link-btn" href="#">Demo</a>
+                                        <a class="btn col-xs-6 link-btn" href="{{proj.github_repo_link}}">Github</a>
                                     </div>
                                     <!--info buttons end-->
                                 </div>
@@ -125,6 +125,11 @@
                         <div class="form-group">
                             <label for="message">Message: </label>
                             <textarea type="text" class="form-control" id="message" placeholder="Type here..." rows="10"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4"></div>
+                            <button class="btn col-xs-4">Submit</button>
+                            <div class="col-xs-4"></div>
                         </div>
                     </form>
                 </div>
